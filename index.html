@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Password Generate</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <br>
+
+      <div class="result-container">
+        <input type="text" id="pass-field" size="63"/>
+        <button class="btn" id="clipboard">
+        </button>
+      </div>
+      <br>
+        <div class="control">
+            <input type="number"id="length" value="8" min="8" max="128">How many characters?</span></label>
+            <br>
+            <input type="checkbox" id="lowercase">
+            <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="uppercase">
+            <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="numbers">
+            <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="punctuation">
+            <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
+          </div>
+      </div>
+      <button class="btn btn-large" id="generate">
+        Generate password
+      </button>
+    <script src="script.js"></script>
+  </body>
+</html>
